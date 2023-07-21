@@ -1,7 +1,7 @@
 // Assignment code here
 var characterLength = 8;
 var choiceArr = [];
-
+//start of the arrays/list of arrays.
 var lowerCaseArr = [
   "a",
   "b",
@@ -90,6 +90,7 @@ function writePassword() {
   }
 }
 
+//This funciton will run a for loop to generate a password with all the concatted arays and will return a password of random chosen characters.
 function generatePassword() {
   var password = "";
   for (var i = 0; i < characterLength; i++) {
@@ -101,7 +102,7 @@ function generatePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
+//This function will start the prompts for user to cofirm what kind of password they want. If the confirm is correct or user clicks Yes then the functionn will add the array on top to the choiceArr arrray leading to the password.
 function getPrompts() {
   choiceArr = [];
 
